@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export default class SimpleRestAPI { 
     constructor(base_URL){
-        this.BASE_URL = 'https://cors-anywhere.herokuapp.com/http://38d60yu5yl.execute-api.us-east-2.amazonaws.com/test/v1';
+        this.BASE_URL = 'https://38d60yu5yl.execute-api.us-east-2.amazonaws.com/test/v1';
     }
 
     GetData(params, callback){

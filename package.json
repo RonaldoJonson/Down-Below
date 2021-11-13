@@ -1,7 +1,7 @@
 {
   "name": "down-below",
   "version": "0.1.0",
-  "homepage": "http://RonaldoJonson.github.io/Down-Below",
+  "homepage": "https://ronaldojonson.github.io/Down-Below/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.15.0",
@@ -12,7 +12,7 @@
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.0.2",
     "react-scripts": "4.0.3",
-    "style-components": "^0.1.0",
+    "styled-components": "^5.3.3",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
