@@ -15,7 +15,7 @@ export default class SimpleRestAPI {
 
     PostData(params, body, callback){
         this.SendRequest(
-            "post",
+            "POST",
             params === ""? this.BASE_URL : this.BASE_URL + params,
             callback,
             body,
@@ -44,9 +44,8 @@ export default class SimpleRestAPI {
             method: method,
             data: JSON.stringify(body),
             headers: {
-                "Access-Control-Allow-Origin": '*',
-                "Content-Type": "application/json; charset=utf-8",
-                "Authorization": "Bearer " + localStorage.getItem("token")
+                "Content-Type": "application/json;charset=utf-8",
+                "Authorization": "Bearer " + localStorage.getItem("token"),
             },
             url: url
         }) 
