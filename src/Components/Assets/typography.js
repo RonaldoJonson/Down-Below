@@ -1,6 +1,7 @@
 import React from 'react';
+import styled from 'styled-components';
 
-export function main_Title (props) {
+export function MainTitle (props) {
     return <h1 size={props.InputVariant} color={props.buttonColor} onClick={props.handleClick}>
         {props.buttonText}
     </h1>
@@ -12,7 +13,7 @@ export function Title (props) {
     </h2>
 }
 
-export function Sub_Title (props) {
+export function SubTitle (props) {
     return <h4 size={props.InputVariant} color={props.buttonColor} onClick={props.handleClick}>
         {props.buttonText}
     </h4>
@@ -40,4 +41,18 @@ export function Label(props) {
     return <label variant={props.InputVariant} color={props.buttonColor} onClick={props.handleClick}>
         {props.buttonText}
     </label>
+}
+
+const LinkStyle = styled.a`
+    text-decoration:none;
+    color: ${props => props.theme.colors.secondary};
+    &:hover{
+        color: ${props => props.theme.colors.secondaryHover};
+    }
+`
+
+export function Link(props) {
+    return <LinkStyle href={props.href} target={props.target}>
+        {props.children}
+    </LinkStyle>
 }

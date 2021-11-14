@@ -4,6 +4,8 @@ export default {
     colors: {
         primary: 'blue',
         secondary: 'red',
+        primaryHover: 'darkblue',
+        secondaryHover: 'darkred',
 
         icons: '#FFFFFF',
 
