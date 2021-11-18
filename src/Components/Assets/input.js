@@ -1,15 +1,15 @@
 import React from 'react';
 
-export function input_text (props) {
+export function InputText (props) {
     return <input color={props.buttonColor} onClick={props.handleClick}>
         {props.buttonText}
     </input>
 }
 
-export function input_check (props) {
+export function InputCheck (props) {
     return <checkbox/> 
 }
 
-export function input_date (props) {
+export function InputDate (props) {
     return <input type="date"/>
 }
