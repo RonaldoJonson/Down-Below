@@ -19,15 +19,15 @@ export default {
         body:'serif'
     },
 
-    padding: {
-        container:'20%',
-        content:'32px 16px'
+    margins: {
+        desktop:{
+            full: '20%',
+            half: '10%',
+            quarter: '5%'
+        }
     },
 
-    margins: {
-        full: '64px',
-        half: '32px',
-        quarter: '16px',
-        simple: '8px'
+    height:{
+        header:'57px'
     }
 }

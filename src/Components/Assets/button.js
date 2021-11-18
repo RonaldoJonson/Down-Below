@@ -21,8 +21,9 @@ const ButtonBase = styled.button`
 
 const PlayButtonStyle = styled.button`
     background-color: ${props => props.theme.colors.secondary};
-    height:40px;
-    width:120px;
+    height:70px;
+    width:236px;
+    margin-left:60px;
     &:hover {
         background-color: ${props => props.theme.colors.secondaryHover};
     }

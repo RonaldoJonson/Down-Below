@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export function MainTitle (props) {
     return <h1 size={props.InputVariant} color={props.buttonColor} onClick={props.handleClick}>
-        {props.buttonText}
+        {props.children}
     </h1>
 }
 
@@ -55,4 +55,20 @@ export function Link(props) {
     return <LinkStyle href={props.href} target={props.target}>
         {props.children}
     </LinkStyle>
+}
+
+const LinkFooterStyle = styled.a`
+    text-decoration:none;
+    color: ${props => props.theme.colors.secondary};
+    text-decoration:none;
+    &:hover{
+        color: ${props => props.theme.colors.secondaryHover};
+        text-decoration:underline;
+    }
+`
+
+export function LinkFooter(props) {
+    return <LinkFooterStyle href={props.href} target={props.target}>
+        {props.children}
+    </LinkFooterStyle>
 }

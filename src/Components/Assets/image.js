@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Logo from '../../Assets/Logo.png';
-
 const BackgroundImage = styled.div`
     background-image: url(${props => props.url});
     background-repeat: no-repeat;
@@ -21,22 +19,19 @@ const BackgroundImage = styled.div`
         width:100%;
     }  
 `
-const LogoStyle = styled.div`
-    background-image: url(${Logo});
-    width: 133px;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: contain;
-`
 
 export function Background (props) {
-    return <BackgroundImage url={props.url}>
+    return <BackgroundImage src={props.src}>
         {props.children}
     </BackgroundImage>
 }
 
-export function MainLogo (props){
-    return <LogoStyle>
-    </LogoStyle>
+export const FullWidthImageStyle = styled.img`
+    width:100%;
+    height:100%:
+`
+
+export function FullWidthImage (props) {
+    return <FullWidthImageStyle src={props.src}>
+    </FullWidthImageStyle>
 }
