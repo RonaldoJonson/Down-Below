@@ -16,7 +16,7 @@ const ButtonBase = styled.button`
 
     @media (max-width: 480px) {
         width:100%;
-    }  
+    }
 `
 
 const PlayButtonStyle = styled.button`
@@ -34,7 +34,7 @@ const PlayButtonStyle = styled.button`
 
     @media (max-width: 480px) {
         width:100%;
-    }  
+    }
 `
 
 export function Button (props) {
@@ -44,14 +44,11 @@ export function Button (props) {
 }
 
 export function ButtonIcon (props) {
-    return <ButtonBase variant={props.InputVariant} onClick={props.handleClick} 
-        edge={props.edge}
-        color={props.buttonColor}
-        aria-label={props.label}>
+    return <ButtonBase variant={props.InputVariant} onClick={props.handleClick}>
         {props.icon}
     </ButtonBase>
 }
 
 export function PlayButton (props) {
-    return <PlayButtonStyle>Play Now</PlayButtonStyle>
+    return <PlayButtonStyle>PRESALE</PlayButtonStyle>
 }

@@ -2,8 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { FullWidthImage } from '../Assets/image';
-import { MainTitle } from '../Assets/typography';
-import { VideoPlayer } from '../Assets/video';
 
 const CoverStyle = styled.section`
     width:100%;
@@ -17,7 +15,7 @@ export function Cover (props) {
     </CoverStyle>
 }
 
-const TitledContentStyle = styled.section`
+const MainContainerStyle = styled.section`
     width:100%;
     background-color:${props => props.color};
     padding: 64px ${props => props.theme.margins.desktop.half};
@@ -25,20 +23,13 @@ const TitledContentStyle = styled.section`
     flex-direction:column;
     align-items:center;
 
-    ${MainTitle} & {
-        margin-bottom:64px;
-    }
-
     & h1{
         margin-bottom:64px;
     }
 `
 
-
-
-export function TitledContent (props) {
-    return <TitledContentStyle color={props.color}>
-        <MainTitle>PLAY-TO-EARN RPG</MainTitle>
-        <VideoPlayer src={props.src}></VideoPlayer>
-    </TitledContentStyle>
+export function MainContainer (props) {
+    return <MainContainerStyle color={props.color}>
+        {props.children}
+    </MainContainerStyle>
 }

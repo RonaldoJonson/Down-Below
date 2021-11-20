@@ -7,3 +7,9 @@ export function TextContainer (props) {
         <SubTitle buttonText={props.buttonText}></SubTitle>
     </Background>
 }
+
+export function NamedPortrait (props) {
+    return <Background url={props.url}>
+        <SubTitle buttonText={props.buttonText}></SubTitle>
+    </Background>
+}
